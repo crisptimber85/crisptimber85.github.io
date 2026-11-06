@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91免费-免费资源聚合_免费视频与实用工具_91免费站点导航</title>
+<meta name="description" content="91免费是一个免费资源聚合入口，汇集免费视频、实用工具、热门资源与站点导航，帮助访客快速找到可用的免费内容，并提供分类筛选与使用提示。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ctext x='32' y='42' font-size='26' font-family='Arial,sans-serif' font-weight='700' fill='%2338bdf8' text-anchor='middle'%3E91%3C/text%3E%3Ccircle cx='50' cy='16' r='5' fill='%23f59e0b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#0f172a;
+  --ink-2:#1e293b;
+  --muted:#64748b;
+  --line:#e2e8f0;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --accent:#0ea5e9;
+  --accent-deep:#0369a1;
+  --warm:#f59e0b;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(15,23,42,.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--ink-2);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{width:min(1140px,92vw);margin:0 auto}
+
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(246,248,251,.88);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:12px 0;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--ink);letter-spacing:.5px}
+.brand-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(135deg,#0f172a,#1e3a5f);
+  display:grid;place-items:center;color:#38bdf8;font-size:15px;font-weight:800;
+  position:relative;
+}
+.brand-mark::after{
+  content:"";position:absolute;top:5px;right:5px;width:6px;height:6px;border-radius:50%;background:var(--warm);
+}
+.nav{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.nav a{
+  font-size:14px;color:var(--muted);padding:6px 12px;border-radius:999px;
+  transition:.2s;font-weight:500;
+}
+.nav a:hover{background:#e8f2fb;color:var(--accent-deep)}
+.header-cta{
+  font-size:14px;font-weight:600;color:#fff;background:var(--accent-deep);
+  padding:8px 18px;border-radius:999px;transition:.2s;
+}
+.header-cta:hover{background:#075985}
+
+/* hero */
+.hero{
+  padding:54px 0 44px;
+  background:
+    radial-gradient(700px 320px at 88% -10%, rgba(14,165,233,.16), transparent 70%),
+    radial-gradient(520px 280px at 6% 110%, rgba(245,158,11,.12), transparent 70%);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:600;color:var(--accent-deep);
+  background:#e0f2fe;padding:5px 14px;border-radius:999px;margin-bottom:18px;
+}
+.eyebrow span{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+h1{
+  font-size:clamp(34px,5vw,52px);line-height:1.15;color:var(--ink);
+  font-weight:800;letter-spacing:-.5px;margin-bottom:16px;
+}
+.hero-sub{font-size:16px;color:var(--muted);max-width:34em;margin-bottom:26px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:12px;font-size:15px;font-weight:600;
+  transition:.2s;border:1px solid transparent;
+}
+.btn-primary{background:var(--accent-deep);color:#fff;box-shadow:0 8px 20px rgba(3,105,161,.22)}
+.btn-primary:hover{background:#075985;transform:translateY(-1px)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:#bae6fd;color:var(--accent-deep)}
+.hero-stats{display:flex;gap:28px;margin-top:32px;flex-wrap:wrap}
+.stat strong{display:block;font-size:24px;color:var(--ink);font-weight:800}
+.stat span{font-size:13px;color:var(--muted)}
+
+.hero-art{
+  background:linear-gradient(150deg,#0f172a,#153a5c 60%,#0b2740);
+  border-radius:22px;padding:26px;color:#cfe6f5;box-shadow:var(--shadow);
+  position:relative;overflow:hidden;
+}
+.hero-art::before{
+  content:"";position:absolute;inset:auto -40px -60px auto;width:200px;height:200px;
+  border-radius:50%;background:radial-gradient(circle,rgba(56,189,248,.35),transparent 70%);
+}
+.hero-art h2{font-size:15px;color:#7dd3fc;font-weight:600;letter-spacing:1px;margin-bottom:14px}
+.art-list{display:grid;gap:10px;position:relative;z-index:1}
+.art-item{
+  display:flex;align-items:center;gap:12px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
+  border-radius:12px;padding:11px 14px;font-size:14px;color:#e2f1fb;
+}
+.art-item b{color:#fff;font-weight:600}
+.art-dot{width:9px;height:9px;border-radius:50%;background:#38bdf8;flex:none}
+.art-item:nth-child(2) .art-dot{background:#f59e0b}
+.art-item:nth-child(3) .art-dot{background:#34d399}
+
+/* sections */
+section{padding:56px 0}
+.section-head{max-width:640px;margin-bottom:30px}
+.section-tag{font-size:13px;font-weight:700;color:var(--accent-deep);letter-spacing:2px;margin-bottom:8px}
+h2{font-size:clamp(22px,3vw,30px);color:var(--ink);font-weight:800;letter-spacing:-.3px;margin-bottom:10px}
+.section-head p{color:var(--muted);font-size:15px}
+
+/* filter */
+.filter-row{
+  display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px;
+}
+.chip{
+  font-size:14px;padding:7px 16px;border-radius:999px;border:1px solid var(--line);
+  background:#fff;color:var(--muted);cursor:pointer;transition:.2s;font-family:inherit;
+}
+.chip:hover{border-color:#bae6fd;color:var(--accent-deep)}
+.chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+.search-box{
+  display:flex;gap:10px;margin-bottom:26px;max-width:520px;
+}
+.search-box input{
+  flex:1;padding:12px 16px;border:1px solid var(--line);border-radius:12px;
+  font-size:15px;font-family:inherit;background:#fff;color:var(--ink);outline:none;
+  transition:.2s;
+}
+.search-box input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(14,165,233,.12)}
+.search-box button{
+  padding:12px 22px;border-radius:12px;border:none;background:var(--accent-deep);
+  color:#fff;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;transition:.2s;
+}
+.search-box button:hover{background:#075985}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;box-shadow:var(--shadow);transition:.22s;display:flex;flex-direction:column;
+}
+.card:hover{transform:translateY(-3px);border-color:#bae6fd}
+.card-icon{
+  width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+  margin-bottom:16px;background:#e0f2fe;color:var(--accent-deep);
+}
+.card-icon.warm{background:#fef3c7;color:#b45309}
+.card-icon.green{background:#dcfce7;color:#15803d}
+.card h3{font-size:17px;color:var(--ink);font-weight:700;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted);flex:1}
+.card .meta{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);
+  font-size:13px;color:var(--muted);
+}
+.tag{
+  font-size:12px;padding:3px 10px;border-radius:999px;background:#f1f5f9;color:#475569;font-weight:500;
+}
+.tag.hot{background:#ffedd5;color:#c2410c}
+
+/* guide list */
+.guide-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:start}
+.steps{display:grid;gap:16px}
+.step{
+  display:flex;gap:16px;background:#fff;border:1px solid var(--line);
+  border-radius:14px;padding:18px 20px;
+}
+.step-num{
+  flex:none;width:34px;height:34px;border-radius:50%;background:var(--ink);
+  color:#7dd3fc;display:grid;place-items:center;font-weight:800;font-size:14px;
+}
+.step h3{font-size:15px;color:var(--ink);font-weight:700;margin-bottom:4px}
+.step p{font-size:14px;color:var(--muted)}
+.note{
+  background:linear-gradient(160deg,#0f172a,#1c3a57);
+  border-radius:18px;padding:26px;color:#cbdff0;font-size:14px;line-height:1.85;
+}
+.note h3{color:#fff;font-size:17px;margin-bottom:12px;font-weight:700}
+.note ul{list-style:none;display:grid;gap:9px;margin-top:14px}
+.note li{padding-left:18px;position:relative}
+.note li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--warm)}
+
+/* faq */
+.faq{display:grid;gap:12px;max-width:820px}
+details{
+  background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;
+}
+details[open]{border-color:#bae6fd}
+summary{
+  font-size:15px;font-weight:600;color:var(--ink);cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:20px;color:var(--accent);font-weight:400;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;font-size:14px;color:var(--muted)}
+
+/* download band */
+.download-band{
+  background:#fff;border:1px solid var(--line);border-radius:20px;
+  padding:32px;display:flex;align-items:center;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;box-shadow:var(--shadow);
+}
+.download-band h3{font-size:20px;color:var(--ink);font-weight:800;margin-bottom:6px}
+.download-band p{font-size:14px;color:var(--muted);max-width:34em}
+.btn-download{
+  display:inline-flex;align-items:center;gap:8px;padding:13px 30px;border-radius:12px;
+  background:var(--ink);color:#fff;font-weight:600;font-size:15px;
+  pointer-events:none;opacity:.9;
+}
+
+/* footer */
+footer{
+  background:var(--ink);color:#94a3b8;padding:44px 0 28px;margin-top:20px;
+}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:30px}
+footer .brand{color:#fff;margin-bottom:12px}
+footer p{font-size:13.5px;line-height:1.8;color:#94a3b8}
+footer h4{color:#e2e8f0;font-size:14px;font-weight:700;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer ul a{font-size:13.5px;color:#94a3b8;transition:.2s}
+footer ul a:hover{color:#7dd3fc}
+.footer-bottom{
+  border-top:1px solid #1e293b;padding-top:20px;font-size:13px;color:#64748b;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{order:-1}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .guide-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .header-inner{justify-content:center}
+  .nav{justify-content:center;order:3;width:100%}
+  .header-cta{display:none}
+  .hero{padding:34px 0 32px}
+  .cards{grid-template-columns:1fr}
+  .hero-stats{gap:20px}
+  .footer-grid{grid-template-columns:1fr}
+  .download-band{padding:24px}
+  section{padding:40px 0}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">91</span>
+      91免费
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#resources">免费资源</a>
+      <a href="#guide">使用方式</a>
+      <a href="#faq">常见问题</a>
+      <a href="#download">下载说明</a>
+    </nav>
+    <a class="header-cta" href="#resources">开始浏览</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span></span>免费资源聚合入口</div>
+        <h1>91免费</h1>
+        <p class="hero-sub">91免费把分散在各类站点中的免费视频、实用工具与日常资源集中呈现，按类型归纳、按热度排序，让访客少走弯路，直接进入可用的免费内容。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#resources">浏览免费资源</a>
+          <a class="btn btn-ghost" href="#guide">了解使用方式</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>6</strong><span>主要资源分类</span></div>
+          <div class="stat"><strong>3</strong><span>步快速上手</span></div>
+          <div class="stat"><strong>每日</strong><span>更新可用入口</span></div>
+        </div>
+      </div>
+      <aside class="hero-art" aria-label="今日热门分类">
+        <h2>今日热门分类</h2>
+        <div class="art-list">
+          <div class="art-item"><span class="art-dot"></span><b>免费视频</b>　按题材归类，打开即看</div>
+          <div class="art-item"><span class="art-dot"></span><b>工具合集</b>　常用小工具免注册使用</div>
+          <div class="art-item"><span class="art-dot"></span><b>资源导航</b>　筛选稳定可访问的站点</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section id="resources">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag">免费资源</div>
+        <h2>91免费收录的主要内容</h2>
+        <p>以下分类按访问频次排列。每个分类都标注了使用门槛与适配场景，方便你判断是否值得点开。</p>
+      </div>
+
+      <div class="search-box" role="search">
+        <input type="search" id="filterInput" placeholder="输入分类关键词，如 视频、工具、导航" aria-label="搜索资源分类">
+        <button type="button" id="filterBtn">筛选</button>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="分类筛选">
+        <button class="chip active" data-cat="all" type="button">全部</button>
+        <button class="chip" data-cat="video" type="button">免费视频</button>
+        <button class="chip" data-cat="tool" type="button">实用工具</button>
+        <button class="chip" data-cat="nav" type="button">资源导航</button>
+      </div>
+
+      <div class="cards" id="cardList">
+        <article class="card" data-cat="video" data-kw="免费视频 影视 短片 纪录片">
+          <div class="card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+          </div>
+          <h3>免费视频入口</h3>
+          <p>汇总公开可看的短视频、纪录片与影视片段入口，按题材与时长分组，部分内容无需注册即可播放。</p>
+          <div class="meta"><span class="tag hot">高频访问</span><span>免注册为主</span></div>
+        </article>
+
+        <article class="card" data-cat="tool" data-kw="实用工具 在线工具 转换 压缩 图片">
+          <div class="card-icon warm">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.8 2.8 0 0 1-4-4z"></path><path d="M6 6l3 3"></path></svg>
+          </div>
+          <h3>在线工具合集</h3>
+          <p>图片压缩、格式转换、文本处理等常用小工具集中在一处，多数在浏览器内直接运行，不上传文件到服务器。</p>
+          <div class="meta"><span class="tag">浏览器内运行</span><span>按需选用</span></div>
+        </article>
+
+        <article class="card" data-cat="nav" data-kw="资源导航 站点导航 聚合 入口">
+          <div class="card-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg>
+          </div>
+          <h3>站点导航清单</h3>
+          <p>把可用的免费站点按领域整理成清单，标注访问状态与是否需要注册，减少反复试错的时间成本。</p>
+          <div class="meta"><span class="tag">状态标注</span><span>定期核对</span></div>
+        </article>
+
+        <article class="card" data-cat="video" data-kw="免费视频 直播 回放 短片">
+          <div class="card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"></rect><path d="M8 3l4 3 4-3"></path></svg>
+          </div>
+          <h3>公开直播与回放</h3>
+          <p>收录公开的直播频道与活动回放页面，适合关注实时内容或补看错过的公开场次，入口以官方公开页为主。</p>
+          <div class="meta"><span class="tag">公开来源</span><span>时效性较强</span></div>
+        </article>
+
+        <article class="card" data-cat="tool" data-kw="实用工具 学习 效率 模板">
+          <div class="card-icon warm">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h12v16H6a2 2 0 0 1-2-1.5z"></path><path d="M8 8h8M8 12h6"></path></svg>
+          </div>
+          <h3>学习与效率资源</h3>
+          <p>公开课、电子书索引与可复用的文档模板归入此类，适合需要自学或整理资料的访客，按主题分栏陈列。</p>
+          <div class="meta"><span class="tag">按主题分栏</span><span>适合自学</span></div>
+        </article>
+
+        <article class="card" data-cat="nav" data-kw="资源导航 更新 可用性">
+          <div class="card-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"></path><path d="M21 3v6h-6"></path></svg>
+          </div>
+          <h3>更新与可用性说明</h3>
+          <p>免费站点的地址与政策变动频繁，导航会标注最近一次核对的时间，遇到失效入口可回到本页换用备用项。</p>
+          <div class="meta"><span class="tag">标注核对时间</span><span>提供备用项</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDE -->
+  <section id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag">使用方式</div>
+        <h2>三步找到可用的91免费资源</h2>
+        <p>91免费本身不存放内容，作用是把入口整理清楚。按下面的顺序操作，通常几分钟内就能定位到想要的分类。</p>
+      </div>
+      <div class="guide-grid">
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h3>先选分类，再看条目</h3>
+              <p>视频、工具、导航三类需求差异明显，先点击对应分类标签，列表会只保留该类的卡片，避免在无关条目上停留。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h3>用关键词缩小范围</h3>
+              <p>在搜索框输入“视频”“转换”“模板”等词，配合分类筛选同时使用，比逐条翻看更快，也便于快速比较同类入口。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h3>打开前先看标注</h3>
+              <p>每张卡片下方标注了使用门槛与来源方式，注册要求、是否公开来源、更新时效都写在那里，判断后再决定是否点开。</p>
+            </div>
+          </div>
+        </div>
+        <aside class="note">
+          <h3>浏览时注意这几点</h3>
+          <p>免费资源的质量差异较大，判断一个入口是否值得使用，可以参考下面几条来自日常维护的经验。</p>
+          <ul>
+            <li>优先选择标注了来源与核对时间的条目。</li>
+            <li>要求填写账号密码或支付信息的页面，先核实再继续。</li>
+            <li>同一需求保留两个以上备用入口，减少单点失效影响。</li>
+            <li>下载类内容确认文件来源，不运行来历不明的程序。</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download">
+    <div class="wrap">
+      <div class="download-band">
+        <div>
+          <h3>91免费桌面入口包</h3>
+          <p>把常用分类整理成一份可离线查看的入口清单，包含分类说明与核对时间，方便在浏览器书签之外多留一份备份。</p>
+        </div>
+        <a class="btn-download" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M7 11l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+          下载
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag">常见问题</div>
+        <h2>关于91免费的几个疑问</h2>
+        <p>访客最常问的问题集中在内容来源、可用性与更新频率，这里统一说明。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>91免费提供内容本身吗？</summary>
+          <p>不提供。91免费是入口整理页，把公开可访问的免费视频、工具与站点按类别列出，实际内容由对应站点提供，访问时以其自身的规则为准。</p>
+        </details>
+        <details>
+          <summary>为什么有些入口会失效？</summary>
+          <p>免费站点的地址、域名与开放策略变动较频繁。导航会标注最近核对时间，失效条目会被替换或补充备用入口，遇到打不开的情况可以回到列表换用其他项。</p>
+        </details>
+        <details>
+          <summary>使用这些资源需要付费吗？</summary>
+          <p>收录范围以免费可访问为前提，部分站点可能提供付费增值选项，但不影响基础内容的免费使用。具体条款以对应站点的说明为准。</p>
+        </details>
+        <details>
+          <summary>分类筛选和搜索可以同时用吗？</summary>
+          <p>可以。先点选分类标签，再在搜索框输入关键词并点击筛选，列表会按两个条件同时收窄，适合在同类资源中快速定位具体条目。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand"><span class="brand-mark">91</span>91免费</div>
+        <p>91免费是一个免费资源聚合入口，按分类整理公开可访问的视频、工具与站点导航，帮助访客减少试错，更快找到可用的免费内容。</p>
+      </div>
+      <div>
+        <h4>站内导航</h4>
+        <ul>
+          <li><a href="#resources">免费资源</a></li>
+          <li><a href="#guide">使用方式</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#download">下载说明</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>资源分类</h4>
+        <ul>
+          <li><a href="#resources">免费视频入口</a></li>
+          <li><a href="#resources">在线工具合集</a></li>
+          <li><a href="#resources">站点导航清单</a></li>
+          <li><a href="#resources">更新与可用性说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>91免费 · 免费资源聚合与站点导航</span>
+      <span>内容由公开来源整理，具体以对应站点说明为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var chips = document.querySelectorAll('.chip');
+  var cards = document.querySelectorAll('#cardList .card');
+  var input = document.getElementById('filterInput');
+  var btn = document.getElementById('filterBtn');
+  var currentCat = 'all';
+
+  function applyFilter(){
+    var kw = (input.value || '').trim().toLowerCase();
+    cards.forEach(function(card){
+      var catOk = currentCat === 'all' || card.getAttribute('data-cat') === currentCat;
+      var text = (card.textContent + ' ' + (card.getAttribute('data-kw') || '')).toLowerCase();
+      var kwOk = !kw || text.indexOf(kw) !== -1;
+      card.style.display = (catOk && kwOk) ? '' : 'none';
+    });
+  }
+
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      currentCat = chip.getAttribute('data-cat');
+      applyFilter();
+    });
+  });
+
+  btn.addEventListener('click', applyFilter);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); applyFilter(); }
+  });
+  input.addEventListener('input', applyFilter);
+})();
+</script>
+
+</body>
+</html>
